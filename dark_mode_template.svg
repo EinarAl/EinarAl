@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="530" viewBox="0 0 600 530" xml:space="preserve" font-family="Consolas, monospace" font-size="16px">
+  <style>
+    text { white-space: pre; }
+    .k { fill: #3fb950; }
+    .v { fill: #79c0ff; }
+    .d { fill: #484f58; }
+    .h { fill: #3fb950; font-weight: bold; }
+    .n { fill: #c9d1d9; }
+    .a { fill: #c9d1d9; }
+    .add { fill: #3fb950; }
+    .del { fill: #f85149; }
+  </style>
+__SVG_CONTENT__
+</svg>

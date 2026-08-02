@@ -1,0 +1,42 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Refresh SVGs with latest stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          cp dark_mode_template.svg dark_mode.svg 2>/dev/null || true
+          cp light_mode_template.svg light_mode.svg 2>/dev/null || true
+          python scripts/update_profile.py
+
+      - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "EinarAl"
+          git config user.email "egalvara@usc.edu"
+          git add dark_mode.svg light_mode.svg README.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Daily profile stats update"
+            git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/EinarAl/EinarAl.git"
+            git push
+          fi
