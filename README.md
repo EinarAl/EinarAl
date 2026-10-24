@@ -1,8 +1,8 @@
 <!-- PROFILE-DATA
-{"repos":8,"commits":358,"prs":18,"loc":28393,"last_updated":"2026-10-23T03:57:08Z","links":["https://github.com/EinarAl","https://monoscript-studio.vercel.app","https://chladni-tuner.vercel.app"]}
+{"repos":8,"commits":358,"prs":18,"loc":28393,"last_updated":"2026-10-24T03:51:33Z","links":["https://github.com/EinarAl","https://monoscript-studio.vercel.app","https://chladni-tuner.vercel.app"]}
 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EinarAl/EinarAl/main/dark_mode.svg?v=1792727828">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EinarAl/EinarAl/main/light_mode.svg?v=1792727828">
-  <img alt="EinarAl's GitHub profile" src="https://raw.githubusercontent.com/EinarAl/EinarAl/main/light_mode.svg?v=1792727828">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EinarAl/EinarAl/main/dark_mode.svg?v=1792813893">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EinarAl/EinarAl/main/light_mode.svg?v=1792813893">
+  <img alt="EinarAl's GitHub profile" src="https://raw.githubusercontent.com/EinarAl/EinarAl/main/light_mode.svg?v=1792813893">
 </picture>
